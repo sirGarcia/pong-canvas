@@ -66,7 +66,6 @@ export class CanvasScreenComponent implements AfterViewInit {
       
       this.drawScreen();
     }, 6);
-    //this.drawScreen();
   }
 
   createKeyboardListener(){
