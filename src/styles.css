@@ -1,1 +1,91 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.canvas-screen{
+    border: 5px solid rgb(146, 146, 146);
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    width: 300px;
+    height: 570px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Estilos para a barra de navegação */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+/* Estilos para a seção principal (jogo e regras) */
+main {
+    display: flex; /* Usando flexbox para layout lado a lado */
+    justify-content: center; /* Centralizar horizontalmente */
+    padding: 2vh;
+}
+
+/* Estilos para a seção de regras */
+aside {
+    width: 300px; /* Largura da seção de regras */
+    margin-left: 2vh; /* Espaço entre o jogo e as regras */
+    padding: 2vh;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+aside ul {
+    list-style-type: square; /* Marcadores quadrados para a lista de regras */
+    padding-left: 2vh;
+}
+
+aside li {
+    margin-bottom: 8px;
+}
+
+/* Estilos para o placar */
+.scoreboard-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Espaço entre os placares dos jogadores */
+    margin-top: 2vh;
+    color: #555; /* Cor do texto do placar */
+}
+
+.player-score {
+    text-align: center;
+}
+
+.score-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block; /* Para que o label fique acima do número */
+}
+
+.score-value {
+    font-size: 2em; /* Tamanho maior para o valor do placar */
+    color: #333; /* Cor mais escura para o valor do placar */
+}
